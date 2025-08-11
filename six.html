@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(226, 252, 252);
+            display:flex;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+            align-items: center;
+        }
+        .box{
+            border: 1px solid black;
+            width: 280px;
+            padding: 40px;
+            background-color: violet;
+            box-shadow: 5px 5px 15px black;
+        }
+        input[type="text"],
+        input[type="password"] 
+        {
+                padding: 8px;
+                width: 100%;
+                margin-bottom: 10px;
+        }
+        .button-container{
+            text-align: center;
+        }
+        .button-container input{
+            padding: 5px 10px;
+            background-color: rgb(rgb(155, 41, 41), green, blue);
+        }
+        .button-container input[type="reset"]
+        {
+        background-color: red;
+        }
+        .label{
+            font-weight: bold;
+            display:block;
+        }
+        .button-container input:hover{
+            background-color: rgb(184, 159, 159);
+            cursor: pointer;
+        }
+        .footer{
+            margin-top: 10px;
+            align:center;
+        }
+        a{
+            color: red;
+        }
+        a :hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form method="post">
+        <div class="button-container">
+         <label>Username</label>  
+         <input type="username" id="Username" name="Username"> 
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" id="Password" name="password">
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <div>
+            <label>New User??<a>Register Now!!</a></label>
+        </div>
+    </form>
+</body>
+</html>
